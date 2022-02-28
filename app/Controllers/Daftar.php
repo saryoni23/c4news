@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Daftar extends BaseController
 {
     public function index()
     {
@@ -10,11 +10,12 @@ class Home extends BaseController
 
         $data = [
             'news'  => $model->getNews(),
-            'title' => 'Home',
+            'title' => 'Pendaftaran
+            ',
         ];
 
         echo view('templates/header', $data);
-        echo view('pages/home', $data);
+        echo view('pages/daftar', $data);
         echo view('templates/footer', $data);
     }
 }
