@@ -13,8 +13,7 @@ class Login extends BaseController
             'title' => 'Login',
         ];
 
-        echo view('templates/header', $data);
-        echo view('pages/login', $data);
-        echo view('templates/footer', $data);
+
+        echo view('auth/login', $data);
     }
 }

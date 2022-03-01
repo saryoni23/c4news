@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Daftar extends BaseController
+class Register extends BaseController
 {
     public function index()
     {
@@ -14,8 +14,7 @@ class Daftar extends BaseController
             ',
         ];
 
-        echo view('templates/header', $data);
-        echo view('pages/daftar', $data);
-        echo view('templates/footer', $data);
+
+        echo view('auth/register', $data);
     }
 }
