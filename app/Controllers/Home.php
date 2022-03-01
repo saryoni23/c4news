@@ -13,8 +13,6 @@ class Home extends BaseController
             'title' => 'Home',
         ];
 
-        echo view('templates/header', $data);
-        echo view('pages/home', $data);
-        echo view('templates/footer', $data);
+        echo view('user/index', $data);
     }
 }
